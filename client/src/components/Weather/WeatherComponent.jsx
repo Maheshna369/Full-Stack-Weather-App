@@ -28,6 +28,7 @@ const WeatherCompononent = (props) => {
   const loading = props.loading;
   const weatherData = props.weatherData;
   const iconId = weatherData.Icons;
+  const Username= sessionStorage.getItem("Username");
   const getIcon = (iconId) => {
     if (iconId === "01d") {
       return oned;
@@ -71,7 +72,7 @@ const WeatherCompononent = (props) => {
     <>
     <div className="weather-container">
       <div className="greet">
-        <h1>Welcome to my Weather App</h1>
+        <h1>Welcome {Username} to my Weather App</h1>
       </div>
       <div className="weather-search-container">
         <input placeholder="Enter a City" onChange={handleChange} value={city} type="text" />
