@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.login-container {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login-container h3 {
+  font-size: 50px;
+}
+.login-container .auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+}
+.login-container .auth-container .Username,
+.login-container .auth-container .Password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Username p,
+.Password p {
+  font-size: 25px;
+}
+.Username input,
+.Password input {
+  width: 300px;
+  border: 5px solid black;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+}
+.login-container button {
+  /* position: absolute;
+      top: 350px; */
+  height: 50px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background-color: #0d6efd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:480px){
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .login-container {
+    height: 300px;
+    width: 80%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .login-container h3 {
+    font-size: 50px;
+  }
+  .login-container .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+  }
+  .login-container .auth-container .Username,
+  .login-container .auth-container .Password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Username p,
+  .Password p {
+    font-size: 25px;
+  }
+  .Username input,
+  .Password input {
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .login-container button {
+    /* position: absolute;
+        top: 350px; */
+    height: 50px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: #0d6efd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer{
+    position: absolute !important;
+    top: 600px !important;
+    bottom: 0px  !important;
+    display: flex  !important;
+    flex-direction: row  !important;
+    justify-content: space-between  !important;
+    align-items: center  !important;
+    width: 100%  !important;
+    color: black  !important;
+  }
+  footer p{
+    font-size: 17px;
+    margin: 10px;
+  }
+}
