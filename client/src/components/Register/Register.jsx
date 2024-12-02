@@ -26,7 +26,7 @@ const Register = () => {
     }
     axios
 
-      .post("https://mernstack-weather-app.onrender.com/", inputRegister)
+      .post("https://mernstack-weather-app.onrender.com/register", inputRegister)
       .then((response) => {
         console.log(
           `The response while post request while doin registration is: ${response}`
