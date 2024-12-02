@@ -29,6 +29,7 @@ const Login = () => {
           `The response while post request while doin login is: ${response}`
         );
         sessionStorage.setItem("isAuth", JSON.stringify(true));
+        sessionStorage.setItem("Username", inputLogin.Username);
         console.log(`The isAuth is: `, sessionStorage.getItem("isAuth"));
         navigate(`/weather`);
         setInputLogin({ Username: "", Password: "" });
