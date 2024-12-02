@@ -23,7 +23,7 @@ const Login = () => {
       return;
     }
     axios
-      .post("http://localhost:1000/login", inputLogin)
+      .post("https://mernstack-weather-app.onrender.com/login", inputLogin)
       .then((response) => {
         console.log(
           `The response while post request while doin login is: ${response}`
